@@ -1,0 +1,14 @@
+body {
+    background: url(/restaurant-page/apero_background.jpg) no-repeat center center fixed;
+    background-size: cover;
+   }
+
+.title{
+    color: white;
+    font-size: 10em;
+}
+
+.nav{
+    color: white;
+    font-size: 3em;
+}
