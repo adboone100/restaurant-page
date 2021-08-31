@@ -1,14 +1,140 @@
 body {
-    background: url(/restaurant-page/apero_background.jpg) no-repeat center center fixed;
+    background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+      rgba(1, 36, 16, 0.45), 
+      rgba(1, 36, 16, 0.45)
+    ),
+    /* bottom, image */
+    url(/restaurant-page/apero_background.jpg) no-repeat center center fixed;
     background-size: cover;
+    color: white;
+    font-family: 'MostraNuova';
+    user-select: none;
    }
 
-.title{
-    color: white;
-    font-size: 10em;
+@font-face {
+    font-family: 'GradoGrado'; /*a name to be used later*/
+    src: url(/restaurant-page/GradoGradooNF.ttf); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'MostraNuova'; /*a name to be used later*/
+    src: url(/restaurant-page/MostraNuova.otf); /*URL to font*/
 }
 
 .nav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.button-nav {
+    font-size: 2em;
+    font-family: 'MostraNuova';
+    border: none;
+    background: none;
+    text-align: center;
     color: white;
+  
+   
+}
+
+.home-nav {
     font-size: 3em;
+    font-family: 'GradoGrado';
+    border: none;
+    background: none;
+    text-align: center;
+    color: white;
+    margin-right: auto;
+    
+}
+
+.button-nav:hover {
+    border-bottom: white solid 5px;
+    cursor: pointer;
+}
+
+.home-nav:hover {
+    border-bottom: white solid 5px;
+    margin-bottom: -5px;
+    cursor: pointer;
+}
+
+
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home p{
+    font-size: 2em; 
+}
+
+
+.restaurant-name{
+    font-size: 6.5em;
+    font-family: 'GradoGrado';
+}
+
+
+/* about page */
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    margin: 9% auto;
+    line-height: 1.6;
+}
+.about p{
+    font-size: 2em;
+}
+
+/* food page */
+
+.food {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: auto;
+    width: 70%;
+    line-height: .5;
+    padding-left: 10%
+}
+
+.food h2{
+    font-size: 1.25em;
+ }
+ 
+ .food p{
+     margin-bottom: 10px;
+ }
+/* drinks page */
+
+
+.drinks {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: auto;
+    width: 70%;
+    line-height: .5;
+    padding-left: 10%
+    
+}
+
+.drinks h2{
+   font-size: 1.25em;
+}
+
+.drinks p{
+    margin-bottom: 10px;
 }
