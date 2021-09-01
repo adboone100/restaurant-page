@@ -6,7 +6,7 @@ body {
       rgba(1, 36, 16, 0.45)
     ),
     /* bottom, image */
-    url(../apero_background.jpg) no-repeat center center fixed;
+    url(./apero_background.jpg) no-repeat center center fixed;
     background-size: cover;
     color: white;
     font-family: 'MostraNuova';
@@ -15,12 +15,12 @@ body {
 
 @font-face {
     font-family: 'GradoGrado'; /*a name to be used later*/
-    src: url(../GradoGradooNF.ttf); /*URL to font*/
+    src: url(./GradoGradooNF.ttf); /*URL to font*/
 }
 
 @font-face {
     font-family: 'MostraNuova'; /*a name to be used later*/
-    src: url(../MostraNuova.otf); /*URL to font*/
+    src: url(./MostraNuova.otf); /*URL to font*/
 }
 
 .nav{
